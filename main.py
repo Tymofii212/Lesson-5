@@ -26,8 +26,12 @@ class Driver(Employee):
     def __init__(self,surname, name, age, experience,transport):
         super().__init__(surname,name,age,experience)
         self.Transport=transport
+        self.TSalary = experience * 1005 + 8000
     def show_transport(self):
         print("Транспорт:", self.Transport)
+    def to_receive_a_salary(self):
+        print("Ваша Зарплата:", self.TSalary)
+
 
 print()
 
